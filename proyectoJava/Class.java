@@ -7,7 +7,7 @@ public class Class {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Señor usurio por favor digite el número de la moneda a convertir");
+        System.out.println("Señor usuario por favor digite el número de la moneda a convertir");
         System.out.println("1 = Peso colombiano");
         System.out.println("2 = Bolivar venezguayo");
         System.out.println("4 = Peso mex Kong");
