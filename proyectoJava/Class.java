@@ -9,9 +9,9 @@ public class Class {
 
         System.out.println("Señor usuario por favor digite el número de la moneda a convertir");
         System.out.println("1 = Peso colombiano");
-        System.out.println("2 = Bolivar venezguayo");
-        System.out.println("4 = Peso mex Kong");
-        System.out.println("8 = Yuan ");
+        System.out.println("2 = Bolivar venezolano");
+        System.out.println("4 = Peso mexicano");
+        System.out.println("8 = Yuan Chino");
         System.out.println("5 = Euro");
         System.out.println("6 = Libra esterlina");
 
@@ -55,27 +55,27 @@ class Exchange {
 
     }
 
-    public static double mexicanPesoToDollar(double mexicanPeso) {
+    public static double mexicanPesoToDollar(double mexicanPesoAmount) {
 
-        return DolarRate.mexicanPeso * mexicanPeso;
-
-    }
-
-    public static double chinesseYuanToDollar(double chinesseYuan) {
-
-        return DolarRate.chinesseYuan * chinesseYuan;
+        return DolarRate.mexicanPeso * mexicanPesoAmount;
 
     }
 
-    public static double euroToDollar(double euro) {
+    public static double chinesseYuanToDollar(double chinesseYuanAmount) {
 
-        return DolarRate.euro * euro;
+        return DolarRate.chinesseYuan * chinesseYuanAmount;
 
     }
 
-    public static double sterlinPoundToDollar(double sterlinPound) {
+    public static double euroToDollar(double euroAmount) {
 
-        return DolarRate.sterlinPound * sterlinPound;
+        return DolarRate.euro * euroAmount;
+
+    }
+
+    public static double sterlinPoundToDollar(double sterlinPoundAmount) {
+
+        return DolarRate.sterlinPound * sterlinPoundAmount;
 
     }
 }
