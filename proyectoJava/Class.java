@@ -10,17 +10,17 @@ public class Class {
         System.out.println("Señor usuario por favor digite el número de la moneda a convertir");
         System.out.println("1 = Peso colombiano");
         System.out.println("2 = Bolivar venezolano");
-        System.out.println("4 = Peso mexicano");
-        System.out.println("8 = Yuan Chino");
+        System.out.println("3 = Peso mexicano");
+        System.out.println("4 = Yuan Chino");
         System.out.println("5 = Euro");
         System.out.println("6 = Libra esterlina");
 
-        final Integer opc_money = sc.nextInt();
+        final Integer opcMoney = sc.nextInt();
 
         System.out.println("Ingrese la cantidad de divisa");
         double quantity = sc.nextDouble();
 
-        switch (opc_money) {
+        switch (opcMoney) {
             case 1:
                 System.out.println(Exchange.colombianPesoToDollar(quantity));
                 break;
@@ -31,10 +31,13 @@ public class Class {
                 System.out.println(Exchange.mexicanPesoToDollar(quantity));
                 break;
             case 4:
-                System.out.println(Exchange.mexicanPesoToDollar(quantity));
+                System.out.println(Exchange.chinesseYuanToDollar(quantity));
                 break;
             case 5:
-                System.out.println(Exchange.chinesseYuanToDollar(quantity));
+                System.out.println(Exchange.euroToDollar(quantity));
+                break;
+            case 6:
+                System.out.println(Exchange.sterlinPoundToDollar(quantity));
                 break;
         }
         sc.close();
